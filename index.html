@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <!-- Include CSS to style the site -->
+  <link rel="stylesheet" href="site.css">
+
+  <!-- Include platform -->
+  <script src="bower_components/platform/platform.js"></script>
+
+  <!-- Import all the elements my app needs -->
+  <link rel="import" href="elements.html">
+</head>
+
+<body>
+  <polymer-ui-scaffold>
+
+    <div tool flex>My App</div>
+    <div class="main-content"></div>
+
+    <polymer-ui-sidebar-menu navigation label="Navigation" offscreen="basement">
+      <polymer-ui-menu-item class="btn home-btn" data-view="home">
+        Home
+      </polymer-ui-menu-item>
+      
+      <polymer-ui-menu-item class="btn users-btn" data-view="users">
+        Users
+      </polymer-ui-menu-item>
+    </polymer-ui-sidebar-menu>
+
+  </polymer-ui-scaffold>
+
+  <!-- Include JavaScript to drive the page -->
+  <script src="app.js"></script>
+</body>
+
+</html>

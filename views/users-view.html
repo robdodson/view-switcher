@@ -1,0 +1,21 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<polymer-element name="users-view">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <template repeat="{{user in users}}">
+      <h1>User name: {{user.name}}</h1>
+    </template>
+  </template>
+  <script>
+  Polymer('users-view', {
+    users: [],
+    setUsers: function(users) {
+      this.users = users;
+    }
+  });
+  </script>
+</polymer-element>

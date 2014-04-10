@@ -1,0 +1,25 @@
+/* http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+*, *:after, *:before {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+polymer-ui-scaffold {
+  display: block;
+  position: relative;
+  height: 100%;
+}
+
+polymer-ui-sidebar-menu {
+  height: 100%;
+}
+
+.main-content {
+  padding: 20px;
+}
